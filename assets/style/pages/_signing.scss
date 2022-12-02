@@ -1,0 +1,43 @@
+
+header
+{
+    .container 
+    {
+        justify-content: space-between;
+    }
+}
+
+main 
+{
+    .container
+    {
+        max-width: 640px;
+        width: 100%;
+        padding-inline: 40px;
+    }
+
+    form 
+    {
+        margin-top: 40px;
+        legend 
+        {
+            margin-bottom: 46px;
+        }
+        .field 
+        {
+            margin-bottom: 20px;
+        }
+
+        button[type="submit"]
+        {
+            margin-top: 36px;
+        }
+
+        button 
+        {
+            width: 100%;
+        }
+    }
+
+
+}

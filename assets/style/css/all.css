@@ -1,0 +1,204 @@
+header .container {
+  width: 1400px;
+  padding-block: 24px;
+}
+@media screen and (max-width: 1401px) {
+  header .container {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  header .container {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 801px) {
+  header .container {
+    width: 740px;
+  }
+}
+@media screen and (max-width: 640px) {
+  header .container {
+    width: 100%;
+    padding-inline: 26px;
+  }
+}
+header > .grid-wrap {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+header > .grid-wrap *:nth-child(2) {
+  justify-self: center;
+}
+header > .grid-wrap *:nth-child(3) {
+  justify-self: end;
+}
+header .logo {
+  height: 32px;
+}
+header .navbar {
+  gap: 16px;
+}
+header .navbar .nav-item {
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+header .navbar .nav-item:hover {
+  background-color: #F8F8F8;
+}
+header .button-wrap {
+  gap: 32px;
+}
+header .button-wrap .contained-button {
+  height: 40px;
+}
+header .responsive {
+  display: none;
+  justify-self: end;
+}
+header .responsive .responsive-navbar {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: -324px;
+  width: 320px;
+  background-color: var(--clr-white-000);
+  box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  z-index: 9;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+header .responsive .responsive-navbar > * {
+  margin-bottom: 26px;
+}
+header .responsive .responsive-navbar .close-btn {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+}
+header .responsive.active .responsive-navbar {
+  right: 0px;
+}
+
+@media screen and (max-width: 801px) {
+  header > .grid-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+  header .navbar,
+header .navbar + .button-wrap {
+    display: none;
+  }
+  header .responsive {
+    display: block;
+  }
+}
+@media screen and (max-width: 460px) {
+  header .responsive .responsive-navbar {
+    width: 100%;
+    right: -100%;
+  }
+}
+footer {
+  border-top: 2px solid #E8E8E8;
+}
+footer .container {
+  width: 1400px;
+  padding-block: 98px 48px;
+}
+@media screen and (max-width: 1401px) {
+  footer .container {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  footer .container {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 801px) {
+  footer .container {
+    width: 740px;
+  }
+}
+@media screen and (max-width: 640px) {
+  footer .container {
+    width: 100%;
+    padding-inline: 26px;
+  }
+}
+footer .upper-part {
+  margin-bottom: 74px;
+}
+footer .upper-part > .flex-wrap {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+footer .upper-part .logo {
+  height: 32px;
+}
+footer .upper-part .grid-wrap {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 150px;
+}
+@media screen and (max-width: 1025px) {
+  footer .upper-part .grid-wrap {
+    gap: 80px;
+  }
+}
+footer .upper-part .list .title {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+footer .upper-part .list p:not(.title) {
+  margin-bottom: 16px;
+  color: rgba(var(--clr-dark-rgb), 0.5);
+  transition: 0.2s ease-in;
+}
+footer .upper-part .list p:not(.title):hover {
+  color: rgba(var(--clr-dark-rgb), 0.8);
+}
+footer .lower-part {
+  margin-top: 16px;
+}
+footer .lower-part p {
+  font-size: 14px;
+  color: rgba(var(--clr-dark-rgb), 0.6);
+}
+footer .lower-part > .flex-wrap {
+  justify-content: space-between;
+}
+footer .lower-part > .flex-wrap span {
+  color: var(--clr-primary);
+}
+footer .lower-part .inner {
+  gap: 32px;
+}
+
+@media screen and (max-width: 801px) {
+  footer .logo {
+    height: 26px;
+  }
+  footer .upper-part > .flex-wrap {
+    display: grid;
+    row-gap: 26px;
+  }
+}
+@media screen and (max-width: 640px) {
+  footer .upper-part .grid-wrap {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 460px) {
+  footer .upper-part .grid-wrap {
+    grid-template-columns: 2fr 2fr;
+  }
+  footer .lower-part > .flex-wrap {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=all.css.map */top: 3px;
+  content: url("../icon/check-fill.svg");
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}/*# sourceMappingURL=all.css.map */

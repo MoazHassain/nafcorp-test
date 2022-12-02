@@ -1,0 +1,31 @@
+.collapsible-wrap
+{
+    [data-collapsible-btn]
+    {
+        justify-content: space-between;
+
+        > * 
+        {
+            pointer-events: none;
+        }
+    }
+
+    .collapsible-content 
+    {
+        max-height: 0px;
+        overflow: hidden;
+        transition: 0.2s ease-in-out;
+
+        .list 
+        {
+            list-style: none;
+        }
+
+        &.active
+        {
+            max-height: 100%;
+        }
+    }
+
+    
+}
