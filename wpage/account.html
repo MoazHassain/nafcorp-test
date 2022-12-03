@@ -1,0 +1,45 @@
+{{block "link-css" .}}
+<link rel="stylesheet" href="/resources/css/account.css">
+{{end}}
+
+{{block "header" .}}
+
+{{end}}
+
+
+
+{{block "content" .}}
+<div class="content">
+    <div class="container">
+        <div class="account-info">
+            <p class="headline1 username">
+                Hello 
+                <span>
+                    {{.UserName}}
+                </span>    
+                !
+            </p>
+            <p class="body1 email">
+                Your Email:
+                <span>
+                    {{.UserEmail}}
+                </span>
+            </p>
+            <p class="body1 mobile">
+                Your Mobile:
+                <span>
+                    {{.UserPhone}}
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+{{end}}
+
+{{block "footer" .}}
+
+{{end}}
+
+{{block "link-js" .}}
+
+{{end}}

@@ -19,6 +19,7 @@ main
     form 
     {
         margin-top: 40px;
+
         legend 
         {
             margin-bottom: 46px;
@@ -36,6 +37,13 @@ main
         button 
         {
             width: 100%;
+        }
+
+        .message
+        {
+            color: red;
+            margin-bottom: 20px;
+            text-align: center;
         }
     }
 

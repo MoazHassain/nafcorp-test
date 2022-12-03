@@ -579,4 +579,9 @@ main form button[type=submit] {
 }
 main form button {
   width: 100%;
+}
+main form .message {
+  color: red;
+  margin-bottom: 20px;
+  text-align: center;
 }/*# sourceMappingURL=signing.css.map */
